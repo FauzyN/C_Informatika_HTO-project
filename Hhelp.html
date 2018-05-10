@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <link href="Hhelp.css" rel="stylesheet" media="all" type="text/css">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+  <body background="IMG/back1.jpg" width="cover">
+
+  <h2 class="h2">Help & Service</h2>
+  <button class="buttonback"><i class="fa fa-home"></i></button>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <button class="collapsible">Food page</button>
+
+<div class="content">
+  <p>
+    <li>klik "PROMO" untuk melihat harga promo yang ingin di pesan</li>
+    <li>klik pada gambar tersebut untuk melihat isi kandungan pada makanan tersebut</li>
+    <li>klik pada kolom komentar jika ingin merubah isi kandungan tersebut</li>
+    <li>klik centang untuk melihat "HARGA + PROMO" dari makanan yang telah dipilih</li>
+    <li>klik "OKE" untuk mulai memesan makanan yang telah dipesan</li>
+  </p>
+</div>
+
+
+<button class="collapsible">Drink page</button>
+<div class="content">
+  <p>
+    <li>klik pada tombol "DRINK" untuk memesan</li>
+    <li>klik "GAMBAR MINUMAN" untuk melihat isi "KANDUNGAN MAKANAN" tersebut</li>
+    <li>klik "CENTANG" untuk melihat "HARGA" yang telah dipesan </li>
+    <li>klik "OKE" untuk memulai pesananan</li>
+  </p>
+</div>
+<button class="collapsible">Promo Page</button>
+<div class="content">
+  <p>
+    <li>klik tombol "PROMO" untuk melihat promo makanan dan minuman</li>
+    <li>klik "PESAN" untuk memesan makanan dan minuman yang anda inginkan</li>
+    <li>klik "OKE" untuk memulai pesanan</li>
+  </p>
+</div>
+<button class="collapsible">Login page</button>
+<div class="content">
+  <p>
+    Login
+    <li>klik "LOGIN" untuk memulai aplikasi</li>
+    <li>isi "EMAIL & PASSWORD" yang telah dibuat di kolom register sebelumnya</li>
+    <li>klik login untuk memulai aplikasi tersebut</li>
+  </p>
+</div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+              content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
