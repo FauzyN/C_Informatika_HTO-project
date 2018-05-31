@@ -1,9 +1,3 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -110,7 +104,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							</li>
 
 							<li>
-								<a href="#"><i class="fa fa-book nav_icon"></i>Cek Pesanan Masuk</a>
+								<a href="#" onclick="notifikasi()"><i class="fa fa-book nav_icon"></i>Cek Pesanan Masuk</a>
 
 								<!-- /nav-second-level -->
 							</li>
@@ -168,7 +162,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			</tr>
 			<tr>
 			<th>1</th>
-			<th>Teh Dingin</th>
+			<th>Sanger</th>
 			<th>2</th>
 			<th><button href="#" data-toggle="modal" data-target="#myModal1">Lihat</button></th>
 			</tr>
@@ -177,6 +171,18 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			<th>Mie Tumis</th>
 			<th>1</th>
 			<th><button href="#" data-toggle="modal" data-target="#myModal2">Lihat</button></th>
+			</tr>
+			<tr>
+			<th>4</th>
+			<th>Teh Dingin</th>
+			<th>1</th>
+			<th><button href="#" data-toggle="modal" data-target="#myModal3">Lihat</button></th>
+			</tr>
+			<tr>
+			<th>2</th>
+			<th>Nasi Goreng</th>
+			<th>1</th>
+			<th><button href="#" data-toggle="modal" data-target="#myModal4">Lihat</button></th>
 			</tr>
 		</table>
 		
@@ -208,6 +214,37 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						}
 					}
 				</script>
+			<script>
+            $(document).ready(function() {
+                  if (Notification.permission !== "granted")
+                    Notification.requestPermission();
+            });
+             
+            function notifikasi() {
+                if (!Notification) {
+                    alert('Browsermu tidak mendukung Web Notification.'); 
+                    return;
+                }
+                if (Notification.permission !== "granted")
+                    Notification.requestPermission();
+                else {
+                    var notifikasi = new Notification('Pesanan Masuk', {
+                        icon: 'HTO',
+                        body: "Meja 2 memesan nasi goreng dan teh dingin",
+                    });
+					var notifikasi = new Notification('Pesanan Masuk', {
+                        icon: 'HTO',
+                        body: "Meja 3 memesan mie tumis dan teh hijau",
+                    });
+                    notifikasi.onclick = function () {
+                        window.open("");      
+                    };
+                    setTimeout(function(){
+                        notifikasi.close();
+                    }, 5000);
+                }
+            };
+			</script>
 				<!-- Bootstrap Core JavaScript -->
 
 					<script type="text/javascript" src="<?php echo base_url()?>assets/admin/js/bootstrap.min.js"></script>
@@ -244,6 +281,38 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<div class="modal-body">
 								<div class="more-grids">
 									<p>Jangan terlalu banyak pedas karna sakit asam lambung</p>
+										<button type="button" class="btn btn-default" data-dismiss="modal">Selesai</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content modal-info">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h3>Catatan</h3>
+							</div>
+							<div class="modal-body">
+								<div class="more-grids">
+									<p></p>
+										<button type="button" class="btn btn-default" data-dismiss="modal">Selesai</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content modal-info">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h3>Catatan</h3>
+							</div>
+							<div class="modal-body">
+								<div class="more-grids">
+									<p></p>
 										<button type="button" class="btn btn-default" data-dismiss="modal">Selesai</button>
 								</div>
 							</div>
