@@ -11,7 +11,8 @@ html,
 body {
     background-color: #fff;
     font-size: 1rem;
-    color: #797979;
+    color: #222;
+
     width: 100%;
     padding: 0;
     margin-left: 0;
@@ -19,6 +20,8 @@ body {
     font-family: 'ambleregular';
     font-weight: 300;
 }
+
+
 
 .klik {
     background-color: white;
@@ -31,6 +34,7 @@ body {
 * + .box-2 {
   margin-top: 70px;
 }
+
 
 img {
     -moz-user-select: none;
@@ -74,7 +78,8 @@ p {
 
 }
 a{
-    font-family: 'robotoregular';
+    font-family: 'Century Gothic';
+
 }
 .clear {
     clear: both;
@@ -126,8 +131,9 @@ input[type="color"],
     border-bottom: 2px solid #ddd;
 }
 .form-control:focus {
-    color:#d87843;
-    border-color: #d87843;
+    color:#9b8354;
+    border-color: #9b8354;
+
     -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075),0 0 0px rgba(102,175,233,.6);
     box-shadow: inset 0 0px 0px rgba(0,0,0,.075),0 0 0px rgba(102,175,233,.6);
 }
@@ -147,6 +153,13 @@ h5 {
 h1 {
     font-size: 3rem;
     line-height: 4rem;
+    color:#000;
+    font-family: 'big_johnregular';
+}
+h1 ab{
+    font-size: 3rem;
+    line-height: 4rem;
+
     color:#fff;
     font-family: 'big_johnregular';
 }
@@ -171,6 +184,17 @@ h4 {
     text-transform: uppercase;
     font-family: 'big_johnregular';
 }
+h4 ab{
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-bottom: 1.1rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'big_johnregular';
+}
+
+}
+
 h5 {
     font-size: 1.125rem;
     margin-bottom: 1rem;
@@ -193,7 +217,8 @@ p:last-child {
 .home-wrap h4,
 .home-wrap h5,
 .home-wrap p {
-    color: #ffffff;
+    color: #000;
+
     /*font-family: 'roboto', sans-serif;*/
 }
 .text {
@@ -265,12 +290,14 @@ ul{
 }
 .overlay {
     /*background-color: rgba(0, 0, 0, 0.3);*/
-    background-color: #2e2e2e;
+    background-color: #fff;
+
     width: 100%;
     height: 750px;
 }
 .creativity_overlay {
-    background-color: #2e2e2e;
+    background-color: #fff;
+
     width: 100%;
     height:auto;
 }
@@ -309,13 +336,15 @@ Separator
     height: 2px;
     width: 85px;
     margin: 50px auto 40px auto;
-    background: #ffffff;
+    background: #222;
+
 }
 .separator2 {
     height: 2px;
     width: 50px;
     margin:30px auto;
-    background: #d87843;
+    background: #9b8354;
+
 }
 .separator3 {
     height: 2px;
@@ -364,17 +393,19 @@ Button
     color: #fff;
     letter-spacing: 1px;
     margin: 0;
-    font-size: 1.875rem;
+    font-size: 25px;
+
     border-radius:0px;
     margin-top: 20px;
     background-color: transparent;
     transition: .5s; 
     border:0px;
-    font-family: 'amblebold';
+    font-family: 'big_johnregular';
 
 }
 .btn:hover {
-    background-color:#d87843;
+    background-color:#9b8354;
+
     color: #fff;
     text-decoration: none;
 }
@@ -407,8 +438,9 @@ Button
 
 
 .btn-larg{
-    border: 2px solid #fff;
-    color:#fff;
+    border: 2px solid #222;
+    color:#222;
+
     padding: 2rem 3rem;
     max-width:430px;
     height: 100px
@@ -541,12 +573,13 @@ h1 span {
 }
 
 .home .main_home h1{
-    color: #fff;
+    color: #222;
 }
 .home .main_home p.subtitle{
-    color: #fff;
+    color: #222;
     padding-bottom: 25px;
-    font-family: 'ambleregular';
+    font-family: 'Century Gothic';
+
     font-size:1.375rem;
     max-width:65%;
     margin:0 auto;
@@ -564,7 +597,8 @@ h1 span {
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #d87843;
+    background: #9b8354;
+
 }
 
 @-webkit-keyframes scroll-ani {
@@ -628,8 +662,8 @@ h1 span {
 	line-height: 18px;
 	font-size: 13px;
 	font-weight: normal;
-	color: #7F8C8D;
-	color: #FFF;
+	color: #222;
+
 	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	letter-spacing: 2px;
 	margin-top: 10%;
@@ -645,7 +679,8 @@ h1 span {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: 3px solid #FFF;
+  border: 3px solid #222;
+
   border-radius: 23px;
 }
 .mouse-scroll .mouse .mouse-movement {
@@ -656,7 +691,8 @@ h1 span {
   width: 8px;
   height: 8px;
   margin: -4px 0 0 -4px;
-  background: #FFF;
+  background: #222;
+
   border-radius: 50%;
   -webkit-animation: scroll-ani 4s linear infinite;
   -moz-animation: scroll-ani 4s linear infinite;
@@ -1004,7 +1040,8 @@ h1 span {
     transition: all 0.6s;
 }
 .contact .single_message_right_info .socail_bookmark a:hover i{
-    color:#d87843;
+    color:#9b8354;
+
 }
 
 .contact .single_contant_left{
@@ -1042,7 +1079,8 @@ h1 span {
 }
 .copyright_text p a{
     padding:0px 10px;
-    color:#d87843;
+    color:#9b8354;
+
 }
 
 
@@ -1067,7 +1105,8 @@ h1 span {
 }
 
 .scrollup:hover {
-    background: #d87843;
+    background: #9b8354;
+
     opacity: 1;
 }
 
