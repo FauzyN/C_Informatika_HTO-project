@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 
-	<link rel="stylesheet" type="text/css" href="order_makanan_minuman.css">
+	<link rel="stylesheet" type="text/css" href="order_menu.css">
 	<header>
 		<meta charset="UTF-8">
 		<title>order_makanan</title>
