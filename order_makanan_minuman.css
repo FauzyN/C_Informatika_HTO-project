@@ -1,0 +1,146 @@
+.h {
+	font-family: American Typewriter, serif;
+	font-style: normal;
+	font-weight: 600;
+	font-variant: small-caps;
+	font-stretch: condense;
+	text-align: center;
+	font-size: 80px;
+	
+}
+
+#makanan_minuman {
+    font-family: Arial;
+	font-style: normal;
+	font-weight: 600;
+	font-variant: small-caps;
+	font-stretch: condense;
+	font-size:25px;
+    border-collapse: collapse;
+    width: 85%;
+	margin-left:7% ;
+	margin-top:50px;
+}
+
+#makanan_minuman th{
+    border-color: #fff;
+    padding: 2px;
+}
+
+#makanan_minuman td{
+	border-color: #fff;
+	padding: 2px;
+}
+
+
+#makanan_minuman th:nth-child(even){
+	background-color: #fff;
+	}
+	
+#makanan_minuman td:nth-child(even){
+	background-color: #fff;
+	}
+
+#makanan_minuman th{
+    padding-top: 1px;
+    padding-bottom: 2px;
+	padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    color: #222;
+}
+
+#makanan_minuman td {
+    padding-top: 1px;
+    padding-bottom: 2px;
+	padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    color: #222;
+}
+
+
+.a {
+	font-family: American Typewriter, serif;
+    font-style: normal;
+    font-variant: small-caps;
+    font-stretch: condense;
+    text-align: center;
+    font-size: 30px;
+	margin-top: 2%;
+}
+
+#catatan {
+    font-family: Arial;
+	font-style: normal;
+	font-weight: 600;
+	font-variant: small-caps;
+	font-stretch: condense;
+	font-size:25px;
+    border-collapse: collapse;
+    width: 8%;
+	margin-left:23%;
+	margin-top:2%;
+}
+
+#catatan th{
+    border-color: #fff;
+    padding: 2px;
+}
+
+#catatan td{
+	border-color: #fff;
+	padding: 2px;
+}
+
+
+#catatan th:nth-child(even){
+	background-color: #fff;
+	}
+	
+#catatan td:nth-child(even){
+	background-color: #fff;
+	}
+
+#catatan th{
+    padding-top: 1px;
+    padding-bottom: 1px;
+	padding: 5px;
+    text-align: center;
+    background-color: #fff;
+    color: #222;
+}
+
+#catatan td {
+    padding-top: 1px;
+    padding-bottom: 1px;
+	padding: 5px;
+    text-align: center;
+    background-color: #fff;
+    color: #222;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 18px 26px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #222;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 28%;
+}
+
+.button:hover {background-color: #222}
+
+.button:active {
+  background-color: #222;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
