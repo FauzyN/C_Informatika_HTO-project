@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-
+        <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="<?php echo base_url()?>assets/sat/assets/css/navmenu.css">
         <link rel="stylesheet" href="<?php echo base_url()?>assets/sat/assets/fonts/stylesheet.css">
         <link rel="stylesheet" href="<?php echo base_url()?>assets/sat/assets/css/magnific-popup.css">
